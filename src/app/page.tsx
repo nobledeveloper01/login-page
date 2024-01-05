@@ -48,7 +48,7 @@ export default function Home() {
           </div>
           <div className="hidden md:block">
             <h1 className="text-black text-base md:text-xl">
-              Don't have an account yet?
+              Dont have an account yet?
               <a href="/" className="text-blue-800">
                 Sign up now!
               </a>
