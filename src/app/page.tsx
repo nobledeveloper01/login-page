@@ -48,7 +48,7 @@ export default function Home() {
           </div>
           <div className="hidden md:block">
             <h1 className="text-black text-base md:text-xl">
-              Don't have an account yet?{" "}
+              Don't have an account yet?
               <a href="/" className="text-blue-800">
                 Sign up now!
               </a>
@@ -86,7 +86,7 @@ export default function Home() {
                 <Image
                   src="/login-logo.png"
                   alt="Image"
-                  width={100} // Adjust the width according to your requirement
+                  width={100}
                   height={100}
                 />
               </div>
@@ -237,7 +237,7 @@ export default function Home() {
 
               <div className="text-sm flex justify-center items-center mt-6 text-gray-400 mb-4">
                 <p>
-                  Don't have an account?
+                  Dont have an account?
                   <Link href="/signup" className=" text-blue-500">
                     Sign up now!
                   </Link>
