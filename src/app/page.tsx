@@ -7,7 +7,6 @@ import Image from "next/image";
 import Logo from "../../public/logo-header.png";
 import MailIcon from "@mui/icons-material/Mail";
 import LockIcon from "@mui/icons-material/Lock";
-import { Main } from "next/document";
 
 export default function Home() {
   const DATA_SOURCE_URL: string = process.env.DATA_SOURCE_URL as string;
@@ -49,7 +48,8 @@ export default function Home() {
           </div>
           <div className="hidden md:block">
             <h1 className="text-black text-base md:text-xl">
-              Don't have an account yet? <a href="/" className="text-blue-800">
+              Don't have an account yet?{" "}
+              <a href="/" className="text-blue-800">
                 Sign up now!
               </a>
             </h1>
@@ -69,11 +69,11 @@ export default function Home() {
             <div className="relative w-full h-cover sm:w-1/2 rounded-2xl">
               <div className="absolute inset-0 overflow-hidden">
                 <Image
-                  src="/login in banner.png"
+                  src="/login-in-banner.png"
                   alt="Image"
-                  layout="fill"
-                  objectFit="cover"
-                  className="rounded-tl-2xl rounded-bl-2xl"
+                  width={1000} // Adjust these values accordingly
+                  height={600}
+                  className="rounded-tl-2xl rounded-bl-2xl "
                 />
 
                 <h1 className="absolute  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-3xl font-bold text-center ">
@@ -86,7 +86,7 @@ export default function Home() {
                 <Image
                   src="/login-logo.png"
                   alt="Image"
-                  width={100}
+                  width={100} // Adjust the width according to your requirement
                   height={100}
                 />
               </div>
@@ -188,7 +188,6 @@ export default function Home() {
                     />
                   </svg>
                   <span className="ml-4 text-black hidden lg:inline">
-                    {" "}
                     Google
                   </span>
                 </button>
@@ -210,7 +209,6 @@ export default function Home() {
                     <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
                   </svg>
                   <span className="ml-4 text-black hidden lg:inline ">
-                    {" "}
                     Github
                   </span>
                 </button>
@@ -239,10 +237,10 @@ export default function Home() {
 
               <div className="text-sm flex justify-center items-center mt-6 text-gray-400 mb-4">
                 <p>
-                  Don't have an account?{" "}
+                  Don't have an account?
                   <Link href="/signup" className=" text-blue-500">
                     Sign up now!
-                  </Link>{" "}
+                  </Link>
                 </p>
               </div>
             </div>
